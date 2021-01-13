@@ -5,8 +5,8 @@ sorted by J8 Pin Number
 | Notes                  | A0        | A4         | A5         | Pull | IO  | Pin   | Pin   | IO  | Pull | A0         | A4         | A5         | Notes              |
 | ---------------------- | --------- | ---------- | ---------- | ---- | --- | ----- | ----- | --- | ---- | ---------- | ---------- | ---------- | ------------------ |
 |                        |           |            |            |      | 3V3 | J8-01 | J8-02 | 5V  |      |            |            |            |                    |
-| DNU: rpi pullup i2c    | SDA1      | CTS2       | SDA3       | UP   | 2   | J8-03 | J8-04 | 5V  |      |            |            |            |                    |
-| DNU: rpi pullup i2c    | SCL1      | RTS2       | SCL3       | UP   | 3   | J8-05 | J8-06 | GND |      |            |            |            | serial GND         |
+| i2c: ds1339            | SDA1      | CTS2       | SDA3       | UP   | 2   | J8-03 | J8-04 | 5V  |      |            |            |            |                    |
+| i2c: ds1339            | SCL1      | RTS2       | SCL3       | UP   | 3   | J8-05 | J8-06 | GND |      |            |            |            | serial GND         |
 | input sw1              | GPCLK0    | TXD3       | SDA3       | UP   | 4   | J8-07 | J8-08 | 14  | DOWN | TXD0       | CTS5       | TXD1       | serial console tx  |
 |                        |           |            |            |      | GND | J8-09 | J8-10 | 15  | DOWN | RXD0       | RTS5       | RXD1       | serial console rx  |
 |                        | FL1       | SPI1_CE1_N | RTS1       | DOWN | 17  | J8-11 | J8-12 | 18  | DOWN | PCM_CLK    | SPI1_CE0_N | PWM0_0     | led white          |
@@ -31,8 +31,8 @@ sorted by GPIO Pin Number
 | ----- | --- | ----- | ----------- | ------------ | ----------- | --------------- | ------------ | ----------- | ------------------------------- |
 | J8-27 | 0   | UP    | SDA0        | SA5          | PCLK        | SPI3_CE0_N      | TXD2         | SDA6        | rs232 tx (DNU: HAT ID EEPROM)   |
 | J8-28 | 1   | UP    | SCL0        | SA4          | DE          | SPI3_MISO       | RXD2         | SCL6        | rs232 rx (DNU: HAT ID EEPROM)   |
-| J8-03 | 2   | UP    | SDA1        | SA3          | LCD_VSYNC   | SPI3_MOSI       | CTS2         | SDA3        | DNU: RPi pullup i2c             |
-| J8-05 | 3   | UP    | SCL1        | SA2          | LCD_HSYNC   | SPI3_SCLK       | RTS2         | SCL3        | DNU: RPi pullup i2c             |
+| J8-03 | 2   | UP    | SDA1        | SA3          | LCD_VSYNC   | SPI3_MOSI       | CTS2         | SDA3        | i2c: ds1339 (RPi pullup)        |
+| J8-05 | 3   | UP    | SCL1        | SA2          | LCD_HSYNC   | SPI3_SCLK       | RTS2         | SCL3        | i2c: ds1339 (RPi pullup)        |
 | J8-07 | 4   | UP    | GPCLK0      | SA1          | DPI_D0      | SPI4_CE0_N      | TXD3         | SDA3        | input sw1                       |
 | J8-29 | 5   | UP    | GPCLK1      | SA0          | DPI_D1      | SPI4_MISO       | RXD3         | SCL3        | input sw2                       |
 | J8-31 | 6   | UP    | GPCLK2      | SOE_N_SE     | DPI_D2      | SPI4_MOSI       | CTS3         | SDA4        | output uc-reset                 |
