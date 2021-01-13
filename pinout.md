@@ -77,9 +77,9 @@ sorted by GPIO Pin Number
 | Name  | Pin  | Ball | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | --- | ---- | --------------------- |
 | PB0   |  19  | F4   |  ?  |   ?  | lid switch 1          |
-| PB1   |  20  | G2   |  ?  |   ?  |                       |
-| PB2   |  21  | G3   |  ?  |   ?  |                       |
-| PB3   |  22  | H1   |  ?  |   ?  |                       |
+| PB1   |  20  | G2   |  ?  |   ?  | (ISP-SCK)             |
+| PB2   |  21  | G3   |  ?  |   ?  | (ISP-MOSI)            |
+| PB3   |  22  | H1   |  ?  |   ?  | (ISP-MISO)            |
 | PB4   |  23  | H2   |  I  |   ?  | probe contact         |
 | PB5   |  24  | G4   |  I  |   ?  | ?                     |
 | PB6   |  25  | J3   |  I  |   ?  | probe home position   |
@@ -100,8 +100,8 @@ sorted by GPIO Pin Number
 | ----- | ---: | ---- | --- | ---- | --------------------- |
 | PD0   |  43  | G6   |  ?  |   ?  |                       |
 | PD1   |  44  | F6   |  ?  |   ?  |                       |
-| PD2   |  45  | K7   |  ?  |   ?  |                       |
-| PD3   |  46  | J7   |  ?  |   ?  |                       |
+| PD2   |  45  | K7   |  I  |   ?  | RXD1                  |
+| PD3   |  46  | J7   |  O  |   ?  | TXD1                  |
 | PD4   |  47  | H7   |  ?  |   ?  |                       |
 | PD5   |  48  | G7   |  ?  |   ?  |                       |
 | PD6   |  49  | K8   |  ?  |   ?  |                       |
@@ -211,8 +211,6 @@ unplaced signals
 - buzzer
 - optical reader (up to 6)
 - probe contact
-- uart1
-- ISP
 
 
 # Connectors and internal Endpoints
