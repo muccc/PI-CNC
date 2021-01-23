@@ -63,143 +63,143 @@ sorted by GPIO Pin Number
 
 # Pinout ATmega2560
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PA0   |  78  | B9   |  ?  |   ?  |                       |
-| PA1   |  77  | C9   |  ?  |   ?  |                       |
-| PA2   |  76  | B10  |  ?  |   ?  |                       |
-| PA3   |  75  | C10  |  ?  |   ?  |                       |
-| PA4   |  74  | D6   |  ?  |   ?  |                       |
-| PA5   |  73  | D7   |  ?  |   ?  |                       |
-| PA6   |  72  | D8   |  ?  |   ?  |                       |
-| PA7   |  71  | D9   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PA0   |  78  | B9   | D22  |  O  |   -  |                       |
+| PA1   |  77  | C9   | D23  |  O  |   -  |                       |
+| PA2   |  76  | B10  | D24  |  O  |   -  |                       |
+| PA3   |  75  | C10  | D25  |  O  |   -  |                       |
+| PA4   |  74  | D6   | D26  |  O  |   -  |                       |
+| PA5   |  73  | D7   | D27  |  I  |   z  |                       |
+| PA6   |  72  | D8   | D28  |  I  |   z  |                       |
+| PA7   |  71  | D9   | D29  |  I  |   z  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PB0   |  19  | F4   |  ?  |   ?  | lid switch 1          |
-| PB1   |  20  | G2   |  ?  |   ?  | (ISP-SCK)             |
-| PB2   |  21  | G3   |  ?  |   ?  | (ISP-MOSI)            |
-| PB3   |  22  | H1   |  ?  |   ?  | (ISP-MISO)            |
-| PB4   |  23  | H2   |  I  |   ?  | probe contact         |
-| PB5   |  24  | G4   |  I  |   ?  | ?                     |
-| PB6   |  25  | J3   |  I  |   ?  | probe home position   |
-| PB7   |  26  | K1   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PB0   |  19  | F4   | D53  |  I  |   ?  | lid switch 1          |
+| PB1   |  20  | G2   | D52  |  I  |   ?  | (ISP-SCK)             |
+| PB2   |  21  | G3   | D51  |  I  |   ?  | (ISP-MOSI)            |
+| PB3   |  22  | H1   | D50  |  I  |   ?  | (ISP-MISO)            |
+| PB4   |  23  | H2   | D10  |  I  |   ?  | probe contact         |
+| PB5   |  24  | G4   | D11  |  I  |   ?  | ?                     |
+| PB6   |  25  | J3   | D12  |  I  |   ?  | probe home position   |
+| PB7   |  26  | K1   | D13  |  I  |   ?  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PC0   |  53  | J9   |  ?  |   ?  |                       |
-| PC1   |  54  | J8   |  ?  |   ?  |                       |
-| PC2   |  55  | H10  |  ?  |   ?  |                       |
-| PC3   |  56  | H9   |  ?  |   ?  |                       |
-| PC4   |  57  | H8   |  ?  |   ?  |                       |
-| PC5   |  58  | G8   |  ?  |   ?  |                       |
-| PC6   |  59  | G9   |  ?  |   ?  |                       |
-| PC7   |  60  | F9   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PC0   |  53  | J9   | D37  |  I  |   z  |                       |
+| PC1   |  54  | J8   | D36  |  I  |   z  |                       |
+| PC2   |  55  | H10  | D35  |  I  |   z  |                       |
+| PC3   |  56  | H9   | D34  |  I  |   z  |                       |
+| PC4   |  57  | H8   | D33  |  O  |   -  |                       |
+| PC5   |  58  | G8   | D32  |  O  |   -  |                       |
+| PC6   |  59  | G9   | D31  |  O  |   -  |                       |
+| PC7   |  60  | F9   | D30  |  O  |   -  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PD0   |  43  | G6   |  ?  |   ?  |                       |
-| PD1   |  44  | F6   |  ?  |   ?  |                       |
-| PD2   |  45  | K7   |  I  |   ?  | RXD1                  |
-| PD3   |  46  | J7   |  O  |   ?  | TXD1                  |
-| PD4   |  47  | H7   |  ?  |   ?  |                       |
-| PD5   |  48  | G7   |  ?  |   ?  |                       |
-| PD6   |  49  | K8   |  ?  |   ?  |                       |
-| PD7   |  50  | K9   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PD0   |  43  | G6   | D21  |  I  |   z  |                       |
+| PD1   |  44  | F6   | D20  |  I  |   z  |                       |
+| PD2   |  45  | K7   | D19  |  I  |   z  | RXD1                  |
+| PD3   |  46  | J7   | D18  |  O  |   -  | TXD1                  |
+| PD4   |  47  | H7   |   -  |  I  |   z  |                       |
+| PD5   |  48  | G7   |   -  |  O  |   -  |                       |
+| PD6   |  49  | K8   |   -  |  O  |   -  |                       |
+| PD7   |  50  | K9   | D38  |  O  |   -  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PE0   |   2  | C2   |  I  |   ?  | lid switch 2          |
-| PE1   |   3  | C3   |  ?  |   ?  |                       |
-| PE2   |   4  | C1   |  ?  |   ?  |                       |
-| PE3   |   5  | D1   |  ?  |   ?  |                       |
-| PE4   |   6  | D2   |  I  |   ?  | gauge home position   |
-| PE5   |   7  | D3   |  ?  |   ?  |                       |
-| PE6   |   8  | D4   |  ?  |   ?  |                       |
-| PE7   |   9  | E1   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PE0   |   2  | C2   |  D0  |  I  |   z  | lid switch 2          |
+| PE1   |   3  | C3   |  D1  |  I  |   z  |                       |
+| PE2   |   4  | C1   |   -  |  I  |   z  |                       |
+| PE3   |   5  | D1   |  D5  |  I  |   z  |                       |
+| PE4   |   6  | D2   |  D2  |  I  |   z  | gauge home position   |
+| PE5   |   7  | D3   |  D3  |  I  |   z  |                       |
+| PE6   |   8  | D4   |   -  |  I  |   z  |                       |
+| PE7   |   9  | E1   |   -  |  O  |   -  | axis ? step           |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PF0   |  97  | A3   |  ?  |   ?  |                       |
-| PF1   |  96  | B3   |  ?  |   ?  |                       |
-| PF2   |  95  | A4   |  ?  |   ?  |                       |
-| PF3   |  94  | B4   |  ?  |   ?  |                       |
-| PF4   |  93  | C4   |  ?  |   ?  |                       |
-| PF5   |  92  | A5   |  ?  |   ?  |                       |
-| PF6   |  91  | B5   |  ?  |   ?  |                       |
-| PF7   |  90  | C5   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PF0   |  97  | A3   |  A0  |  I  |   z  |                       |
+| PF1   |  96  | B3   |  A1  |  O  |   -  |                       |
+| PF2   |  95  | A4   |  A2  |  I  |   z  |                       |
+| PF3   |  94  | B4   |  A3  |  I  |   z  |                       |
+| PF4   |  93  | C4   |  A4  |  O  |   -  |                       |
+| PF5   |  92  | A5   |  A5  |  I  |   z  |                       |
+| PF6   |  91  | B5   |  A6  |  I  |   z  |                       |
+| PF7   |  90  | C5   |  A7  |  I  |   z  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PG0   |  51  | K10  |  ?  |   ?  |                       |
-| PG1   |  52  | J10  |  ?  |   ?  |                       |
-| PG2   |  70  | D10  |  ?  |   ?  |                       |
-| PG3   |  28  | J2   |  ?  |   ?  |                       |
-| PG4   |  29  | K2   |  ?  |   ?  |                       |
-| PG5   |   1  | B2   |  ?  |   ?  |                       |
-| PG6   |   -  | -    |  -  |   -  | non-existent          |
-| PG7   |   -  | -    |  -  |   -  | non-existent          |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PG0   |  51  | K10  | D41  |  ?  |   ?  | unused?               |
+| PG1   |  52  | J10  | D40  |  ?  |   ?  | unused?               |
+| PG2   |  70  | D10  | D39  |  ?  |   ?  | unused?               |
+| PG3   |  28  | J2   |   -  |  ?  |   ?  | unused?               |
+| PG4   |  29  | K2   |   -  |  ?  |   ?  | unused?               |
+| PG5   |   1  | B2   |  D4  |  ?  |   ?  | unused?               |
+| PG6   |   -  | -    |   -  |  -  |   -  | non-existent          |
+| PG7   |   -  | -    |   -  |  -  |   -  | non-existent          |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PH0   |  12  | E2   |  ?  |   ?  |                       |
-| PH1   |  13  | E3   |  ?  |   ?  |                       |
-| PH2   |  14  | D5   |  ?  |   ?  |                       |
-| PH3   |  15  | E4   |  ?  |   ?  |                       |
-| PH4   |  16  | F2   |  ?  |   ?  |                       |
-| PH5   |  17  | E5   |  ?  |   ?  |                       |
-| PH6   |  18  | F3   |  ?  |   ?  |                       |
-| PH7   |  27  | J1   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PH0   |  12  | E2   | D17  |  I  |   z  |                       |
+| PH1   |  13  | E3   | D16  |  O  |   -  |                       |
+| PH2   |  14  | D5   |   -  |  O  |   -  |                       |
+| PH3   |  15  | E4   |  D6  |  I  |   U  |                       |
+| PH4   |  16  | F2   |  D7  |  I  |   U  |                       |
+| PH5   |  17  | E5   |  D8  |  O  |   -  |                       |
+| PH6   |  18  | F3   |  D9  |  O  |   -  |                       |
+| PH7   |  27  | J1   |   -  |  I  |   z  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PJ0   |  63  | F8   |  I  |   ?  | ?                     |
-| PJ1   |  64  | F7   |  I  |   ?  | ?                     |
-| PJ2   |  65  | E10  |  I  |   ?  | ?                     |
-| PJ3   |  66  | E9   |  I  |   ?  | ?                     |
-| PJ4   |  67  | E8   |  I  |   ?  | ?                     |
-| PJ5   |  68  | E7   |  I  |   ?  | ?                     |
-| PJ6   |  69  | E6   |  I  |   ?  | ?                     |
-| PJ7   |  79  | C8   |  I  |   ?  | ?                     |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PJ0   |  63  | F8   | D15  |  I  |   U  | ?                     |
+| PJ1   |  64  | F7   | D14  |  I  |   U  | ?                     |
+| PJ2   |  65  | E10  |   -  |  I  |   U  | ?                     |
+| PJ3   |  66  | E9   |   -  |  I  |   U  | ?                     |
+| PJ4   |  67  | E8   |   -  |  I  |   U  | ?                     |
+| PJ5   |  68  | E7   |   -  |  I  |   U  | ?                     |
+| PJ6   |  69  | E6   |   -  |  I  |   U  | ?                     |
+| PJ7   |  79  | C8   |   -  |  I  |   U  | ?                     |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PK0   |  89  | A6   |  ?  |   ?  |                       |
-| PK1   |  88  | B6   |  ?  |   ?  |                       |
-| PK2   |  87  | C6   |  ?  |   ?  |                       |
-| PK3   |  86  | A7   |  ?  |   ?  |                       |
-| PK4   |  85  | B7   |  ?  |   ?  |                       |
-| PK5   |  84  | C7   |  ?  |   ?  |                       |
-| PK6   |  83  | A8   |  ?  |   ?  |                       |
-| PK7   |  82  | B8   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PK0   |  89  | A6   |  A8  |  O  |   -  |                       |
+| PK1   |  88  | B6   |  A9  |  O  |   -  |                       |
+| PK2   |  87  | C6   | A10  |  O  |   -  |                       |
+| PK3   |  86  | A7   | A11  |  O  |   -  |                       |
+| PK4   |  85  | B7   | A12  |  O  |   -  |                       |
+| PK5   |  84  | C7   | A13  |  O  |   -  |                       |
+| PK6   |  83  | A8   | A14  |  O  |   -  |                       |
+| PK7   |  82  | B8   | A15  |  O  |   -  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| PL0   |  35  | J4   |  ?  |   ?  |                       |
-| PL1   |  36  | H4   |  ?  |   ?  |                       |
-| PL2   |  37  | G5   |  ?  |   ?  |                       |
-| PL3   |  38  | H5   |  ?  |   ?  |                       |
-| PL4   |  39  | F5   |  ?  |   ?  |                       |
-| PL5   |  40  | K6   |  ?  |   ?  |                       |
-| PL6   |  41  | J6   |  ?  |   ?  |                       |
-| PL7   |  42  | H6   |  ?  |   ?  |                       |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| PL0   |  35  | J4   | D49  |  I  |   z  |                       |
+| PL1   |  36  | H4   | D48  |  I  |   z  |                       |
+| PL2   |  37  | G5   | D47  |  I  |   z  |                       |
+| PL3   |  38  | H5   | D46  |  I  |   z  |                       |
+| PL4   |  39  | F5   | D45  |  O  |   -  |                       |
+| PL5   |  40  | K6   | D44  |  I  |   z  |                       |
+| PL6   |  41  | J6   | D43  |  I  |   z  |                       |
+| PL7   |  42  | H6   | D42  |  I  |   z  |                       |
 
-| Name  | Pin  | Ball | Dir | Pull | Usage                 |
-| ----- | ---: | ---- | --- | ---- | --------------------- |
-| Vcc   |  10  | F1   |  -  |   -  | Power                 |
-| Vcc   |  31  | K3   |  -  |   -  | Power                 |
-| Vcc   |  61  | G10  |  -  |   -  | Power                 |
-| Vcc   |  80  | A10  |  -  |   -  | Power                 |
-| AVcc  | 100  | B1   |  -  |   -  | Analog Power          |
-| Aref  |  98  | A2   |  -  |   -  | Analog Reference      |
-| XTAL1 |  34  | K5   |  -  |   -  | Clock: 8 MHz          |
-| XTAL2 |  33  | J5   |  -  |   -  | Clock: 8 MHz          |
-| nRST  |  30  | H3   |  I  |   -  | reset (inverted)      |
-| GND   |  11  | G1   |  -  |   -  | Ground                |
-| GND   |  32  | K4   |  -  |   -  | Ground                |
-| GND   |  62  | F10  |  -  |   -  | Ground                |
-| GND   |  81  | A9   |  -  |   -  | Ground                |
-| GND   |  99  | A1   |  -  |   -  | Ground                |
+| Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
+| ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
+| Vcc   |  10  | F1   | Vcc  |  -  |   -  | Power                 |
+| Vcc   |  31  | K3   | Vcc  |  -  |   -  | Power                 |
+| Vcc   |  61  | G10  | Vcc  |  -  |   -  | Power                 |
+| Vcc   |  80  | A10  | Vcc  |  -  |   -  | Power                 |
+| AVcc  | 100  | B1   | Vcc  |  -  |   -  | Analog Power          |
+| Aref  |  98  | A2   | Aref |  -  |   -  | Analog Reference      |
+| XTAL1 |  34  | K5   |   -  |  -  |   -  | Clock: 8 MHz          |
+| XTAL2 |  33  | J5   |   -  |  -  |   -  | Clock: 8 MHz          |
+| nRST  |  30  | H3   | RST  |  I  |   -  | reset (inverted)      |
+| GND   |  11  | G1   | GND  |  -  |   -  | Ground                |
+| GND   |  32  | K4   | GND  |  -  |   -  | Ground                |
+| GND   |  62  | F10  | GND  |  -  |   -  | Ground                |
+| GND   |  81  | A9   | GND  |  -  |   -  | Ground                |
+| GND   |  99  | A1   | GND  |  -  |   -  | Ground                |
 
 unplaced signals
 - step x,y,z,b
