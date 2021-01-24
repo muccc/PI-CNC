@@ -1,6 +1,6 @@
 # Pinout Pi4
 
-sorted by J8 Pin Number
+### sorted by J8 Pin Number
 
 | Notes                  | A0        | A4         | A5         | Pull | IO  | Pin   | Pin   | IO  | Pull | A0         | A4         | A5         | Notes              |
 | ---------------------- | --------- | ---------- | ---------- | ---- | --- | ----- | ----- | --- | ---- | ---------- | ---------- | ---------- | ------------------ |
@@ -25,7 +25,7 @@ sorted by J8 Pin Number
 |                        | SD0_DAT2  | ARM_TDI    | SPI5_CE1_N | DOWN | 26  | J8-37 | J8-38 | 20  | DOWN | PCM_DIN    | SPI1_MOSI  | GPCLK0     |                    |
 |                        |           |            |            |      | GND | J8-39 | J8-40 | 21  | DOWN | PCM_DOUT   | SPI1_SCLK  | GPCLK1     |                    |
 
-sorted by GPIO Pin Number
+### sorted by GPIO Pin Number
 
 | Pin   | IO  | Pull  | A0          | A1           | A2          | A3              | A4           | A5          | Special                         |
 | ----- | --- | ----- | ----------- | ------------ | ----------- | --------------- | ------------ | ----------- | ------------------------------- |
@@ -153,14 +153,14 @@ sorted by GPIO Pin Number
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PJ0   |  63  | F8   | D15  |  I  |   U  | ?                     |
-| PJ1   |  64  | F7   | D14  |  I  |   U  | ?                     |
-| PJ2   |  65  | E10  |   -  |  I  |   U  | ?                     |
-| PJ3   |  66  | E9   |   -  |  I  |   U  | ?                     |
-| PJ4   |  67  | E8   |   -  |  I  |   U  | ?                     |
-| PJ5   |  68  | E7   |   -  |  I  |   U  | ?                     |
-| PJ6   |  69  | E6   |   -  |  I  |   U  | ?                     |
-| PJ7   |  79  | C8   |   -  |  I  |   U  | ?                     |
+| PJ0   |  63  | F8   | D15  |  I  |   U  | endstop X             |
+| PJ1   |  64  | F7   | D14  |  I  |   U  | endstop Y             |
+| PJ2   |  65  | E10  |   -  |  I  |   U  | endstop Z             |
+| PJ3   |  66  | E9   |   -  |  I  |   U  | endstop B             |
+| PJ4   |  67  | E8   |   -  |  I  |   U  | input 1               |
+| PJ5   |  68  | E7   |   -  |  I  |   U  | input 2               |
+| PJ6   |  69  | E6   |   -  |  I  |   U  | input 3               |
+| PJ7   |  79  | C8   |   -  |  I  |   U  | input 4               |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
@@ -201,16 +201,21 @@ sorted by GPIO Pin Number
 | GND   |  81  | A9   | GND  |  -  |   -  | Ground                |
 | GND   |  99  | A1   | GND  |  -  |   -  | Ground                |
 
-unplaced signals
-- step x,y,z,b
-- dir  x,y,z,b
-- endstop x,y,z,b
-- home sensor gauge + probe
-- motor wheel
-- motor spindle
-- buzzer
-- optical reader (up to 6)
-- probe contact
+### signal summary
+
+| Pin                     | Name |
+| ----------------------: | ---- |
+| PD2 PD3                 | uart rx/tx
+| P?? P?? P?? P??         | step x,y,z,b
+| P?? P?? P?? P??         | dir  x,y,z,b
+| PJ0 PJ1 PJ2 PJ3         | endstop x,y,z,b
+| P?? P??                 | motor wheel spindle
+| P??                     | buzzer
+| PE4 PB6                 | home sensor gauge + probe
+| PB4                     | probe contact
+| PB0 PE0                 | lid switch 1+2
+| P?? P?? P?? P?? P?? P?? | optical reader (up to 6)
+| PJ4 PJ5 PJ6 PJ7         | "inputs" 1-4
 
 
 # Connectors and internal Endpoints
@@ -235,7 +240,7 @@ unplaced signals
 | J18   |    4 | Z axis sensor (1 key, 2 Vcc, 3 out, 4 GND)
 | J19   |    6 | B axis sensor (3 key)
 | J20   |    8 | "inputs" (1 key)
-| J21   |    6 | probe contact (1+2, other nc) == fast switch
+| J21   |    6 | probe contact1/2(spare) (1+2, other nc) == fast switch
 | J22   |    6 | probe home sensor + lidsw (1 key, 2+6 lid switch, 3 out, 4 Vcc, 5 GND)
 | J23   |    8 | "outputs" (3 key)
 | J25   |    4 | uC debug
