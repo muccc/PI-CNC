@@ -65,91 +65,91 @@
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PA0   |  78  | B9   | D22  |  O  |   -  |                       |
-| PA1   |  77  | C9   | D23  |  O  |   -  |                       |
-| PA2   |  76  | B10  | D24  |  O  |   -  |                       |
-| PA3   |  75  | C10  | D25  |  O  |   -  |                       |
-| PA4   |  74  | D6   | D26  |  O  |   -  |                       |
-| PA5   |  73  | D7   | D27  |  I  |   z  |                       |
-| PA6   |  72  | D8   | D28  |  I  |   z  |                       |
-| PA7   |  71  | D9   | D29  |  I  |   z  |                       |
+| PA0   |  78  | B9   | D22  |  O  |   -  | stepper-ena (neg)     |
+| PA1   |  77  | C9   | D23  |  O  |   -  | static 1              |
+| PA2   |  76  | B10  | D24  |  O  |   -  | static 1              |
+| PA3   |  75  | C10  | D25  |  O  |   -  | static 0              |
+| PA4   |  74  | D6   | D26  |  O  |   -  | static 0              |
+| PA5   |  73  | D7   | D27  |  -  |   -  | nc                    |
+| PA6   |  72  | D8   | D28  |  -  |   -  | nc                    |
+| PA7   |  71  | D9   | D29  |  -  |   -  | nc                    |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
 | PB0   |  19  | F4   | D53  |  I  |   ?  | lid switch 1          |
-| PB1   |  20  | G2   | D52  |  I  |   ?  | (ISP-SCK)             |
-| PB2   |  21  | G3   | D51  |  I  |   ?  | (ISP-MOSI)            |
-| PB3   |  22  | H1   | D50  |  I  |   ?  | (ISP-MISO)            |
+| PB1   |  20  | G2   | D52  |  -  |   -  | (ISP-SCK)             |
+| PB2   |  21  | G3   | D51  |  -  |   -  | (ISP-MOSI)            |
+| PB3   |  22  | H1   | D50  |  -  |   -  | (ISP-MISO)            |
 | PB4   |  23  | H2   | D10  |  I  |   ?  | probe contact         |
-| PB5   |  24  | G4   | D11  |  I  |   ?  | ?                     |
+| PB5   |  24  | G4   | D11  |  I  |   ?  | fastsw2               |
 | PB6   |  25  | J3   | D12  |  I  |   ?  | probe home position   |
-| PB7   |  26  | K1   | D13  |  I  |   ?  |                       |
+| PB7   |  26  | K1   | D13  |  I  |   ?  | ?                     |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PC0   |  53  | J9   | D37  |  I  |   z  |                       |
-| PC1   |  54  | J8   | D36  |  I  |   z  |                       |
-| PC2   |  55  | H10  | D35  |  I  |   z  |                       |
-| PC3   |  56  | H9   | D34  |  I  |   z  |                       |
-| PC4   |  57  | H8   | D33  |  O  |   -  |                       |
-| PC5   |  58  | G8   | D32  |  O  |   -  |                       |
-| PC6   |  59  | G9   | D31  |  O  |   -  |                       |
-| PC7   |  60  | F9   | D30  |  O  |   -  |                       |
+| PC0   |  53  | J9   | D37  |  -  |   -  | nc                    |
+| PC1   |  54  | J8   | D36  |  -  |   -  | nc                    |
+| PC2   |  55  | H10  | D35  |  -  |   -  | nc                    |
+| PC3   |  56  | H9   | D34  |  -  |   -  | nc                    |
+| PC4   |  57  | H8   | D33  |  O  |   -  | M10/11 K0  aux-out?   |
+| PC5   |  58  | G8   | D32  |  O  |   -  | M10/11 K1  aux-out?   |
+| PC6   |  59  | G9   | D31  |  O  |   -  | M10/11 K2  aux-out?   |
+| PC7   |  60  | F9   | D30  |  O  |   -  | M10/11 K3  aux-out?   |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PD0   |  43  | G6   | D21  |  I  |   z  |                       |
-| PD1   |  44  | F6   | D20  |  I  |   z  |                       |
+| PD0   |  43  | G6   | D21  |  I  |   z  | nc                    |
+| PD1   |  44  | F6   | D20  |  I  |   z  | nc                    |
 | PD2   |  45  | K7   | D19  |  I  |   z  | RXD1                  |
 | PD3   |  46  | J7   | D18  |  O  |   -  | TXD1                  |
-| PD4   |  47  | H7   |   -  |  I  |   z  |                       |
-| PD5   |  48  | G7   |   -  |  O  |   -  |                       |
-| PD6   |  49  | K8   |   -  |  O  |   -  |                       |
-| PD7   |  50  | K9   | D38  |  O  |   -  |                       |
+| PD4   |  47  | H7   |   -  |  I  |   z  | nc                    |
+| PD5   |  48  | G7   |   -  |  O  |   -  | LED red               |
+| PD6   |  49  | K8   |   -  |  O  |   -  | LED green             |
+| PD7   |  50  | K9   | D38  |  O  |   -  | LED blue              |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
 | PE0   |   2  | C2   |  D0  |  I  |   z  | lid switch 2          |
-| PE1   |   3  | C3   |  D1  |  I  |   z  |                       |
-| PE2   |   4  | C1   |   -  |  I  |   z  |                       |
-| PE3   |   5  | D1   |  D5  |  I  |   z  |                       |
+| PE1   |   3  | C3   |  D1  |  I  |   z  | nc                    |
+| PE2   |   4  | C1   |   -  |  I  |   z  | nc                    |
+| PE3   |   5  | D1   |  D5  |  I  |   z  | nc                    |
 | PE4   |   6  | D2   |  D2  |  I  |   z  | gauge home position   |
-| PE5   |   7  | D3   |  D3  |  I  |   z  |                       |
-| PE6   |   8  | D4   |   -  |  I  |   z  |                       |
-| PE7   |   9  | E1   |   -  |  O  |   -  | axis ? step           |
+| PE5   |   7  | D3   |  D3  |  I  |   z  | motor1 running        |
+| PE6   |   8  | D4   |   -  |  I  |   z  | motor2 running        |
+| PE7   |   9  | E1   |   -  |  O  |   -  | ?? square wave        |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PF0   |  97  | A3   |  A0  |  I  |   z  |                       |
-| PF1   |  96  | B3   |  A1  |  O  |   -  |                       |
-| PF2   |  95  | A4   |  A2  |  I  |   z  |                       |
-| PF3   |  94  | B4   |  A3  |  I  |   z  |                       |
-| PF4   |  93  | C4   |  A4  |  O  |   -  |                       |
-| PF5   |  92  | A5   |  A5  |  I  |   z  |                       |
-| PF6   |  91  | B5   |  A6  |  I  |   z  |                       |
-| PF7   |  90  | C5   |  A7  |  I  |   z  |                       |
+| PF0   |  97  | A3   |  A0  |  I  |   z  | ? laser?              |
+| PF1   |  96  | B3   |  A1  |  O  |   -  | ? laser               |
+| PF2   |  95  | A4   |  A2  |  I  |   z  | ? laser?              |
+| PF3   |  94  | B4   |  A3  |  I  |   z  | ? laser?              |
+| PF4   |  93  | C4   |  A4  |  O  |   -  | ? laser?              |
+| PF5   |  92  | A5   |  A5  |  I  |   z  | ?  motor?             |
+| PF6   |  91  | B5   |  A6  |  I  |   z  | ?  motor?             |
+| PF7   |  90  | C5   |  A7  |  I  |   z  | nc                    |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PG0   |  51  | K10  | D41  |  ?  |   ?  | unused?               |
-| PG1   |  52  | J10  | D40  |  ?  |   ?  | unused?               |
-| PG2   |  70  | D10  | D39  |  ?  |   ?  | unused?               |
-| PG3   |  28  | J2   |   -  |  ?  |   ?  | unused?               |
-| PG4   |  29  | K2   |   -  |  ?  |   ?  | unused?               |
-| PG5   |   1  | B2   |  D4  |  ?  |   ?  | unused?               |
+| PG0   |  51  | K10  | D41  |  -  |   -  | nc                    |
+| PG1   |  52  | J10  | D40  |  -  |   -  | nc                    |
+| PG2   |  70  | D10  | D39  |  -  |   -  | nc                    |
+| PG3   |  28  | J2   |   -  |  -  |   -  | nc                    |
+| PG4   |  29  | K2   |   -  |  -  |   -  | nc                    |
+| PG5   |   1  | B2   |  D4  |  -  |   -  | nc                    |
 | PG6   |   -  | -    |   -  |  -  |   -  | non-existent          |
 | PG7   |   -  | -    |   -  |  -  |   -  | non-existent          |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PH0   |  12  | E2   | D17  |  I  |   z  |                       |
-| PH1   |  13  | E3   | D16  |  O  |   -  |                       |
-| PH2   |  14  | D5   |   -  |  O  |   -  |                       |
-| PH3   |  15  | E4   |  D6  |  I  |   U  |                       |
-| PH4   |  16  | F2   |  D7  |  I  |   U  |                       |
-| PH5   |  17  | E5   |  D8  |  O  |   -  |                       |
-| PH6   |  18  | F3   |  D9  |  O  |   -  |                       |
-| PH7   |  27  | J1   |   -  |  I  |   z  |                       |
+| PH0   |  12  | E2   | D17  |  I  |   z  | nc                    |
+| PH1   |  13  | E3   | D16  |  O  |   -  | motor1 (spindle)      |
+| PH2   |  14  | D5   |   -  |  O  |   -  | motor2 (wheel)        |
+| PH3   |  15  | E4   |  D6  |  I  |   U  | motor1 error (neg)    |
+| PH4   |  16  | F2   |  D7  |  I  |   U  | motor2 error (neg)    |
+| PH5   |  17  | E5   |  D8  |  O  |   -  | static 1              |
+| PH6   |  18  | F3   |  D9  |  O  |   -  | static 1              |
+| PH7   |  27  | J1   |   -  |  I  |   z  | nc                    |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
@@ -164,25 +164,25 @@
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PK0   |  89  | A6   |  A8  |  O  |   -  |                       |
-| PK1   |  88  | B6   |  A9  |  O  |   -  |                       |
-| PK2   |  87  | C6   | A10  |  O  |   -  |                       |
-| PK3   |  86  | A7   | A11  |  O  |   -  |                       |
-| PK4   |  85  | B7   | A12  |  O  |   -  |                       |
-| PK5   |  84  | C7   | A13  |  O  |   -  |                       |
-| PK6   |  83  | A8   | A14  |  O  |   -  |                       |
-| PK7   |  82  | B8   | A15  |  O  |   -  |                       |
+| PK0   |  89  | A6   |  A8  |  O  |   -  | step X                |
+| PK1   |  88  | B6   |  A9  |  O  |   -  | step Y                |
+| PK2   |  87  | C6   | A10  |  O  |   -  | step Z                |
+| PK3   |  86  | A7   | A11  |  O  |   -  | step B                |
+| PK4   |  85  | B7   | A12  |  O  |   -  | dir X (neg)           |
+| PK5   |  84  | C7   | A13  |  O  |   -  | dir Y                 |
+| PK6   |  83  | A8   | A14  |  O  |   -  | dir Z (neg)           |
+| PK7   |  82  | B8   | A15  |  O  |   -  | dir B (neg)           |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
-| PL0   |  35  | J4   | D49  |  I  |   z  |                       |
-| PL1   |  36  | H4   | D48  |  I  |   z  |                       |
-| PL2   |  37  | G5   | D47  |  I  |   z  |                       |
-| PL3   |  38  | H5   | D46  |  I  |   z  |                       |
-| PL4   |  39  | F5   | D45  |  O  |   -  |                       |
-| PL5   |  40  | K6   | D44  |  I  |   z  |                       |
-| PL6   |  41  | J6   | D43  |  I  |   z  |                       |
-| PL7   |  42  | H6   | D42  |  I  |   z  |                       |
+| PL0   |  35  | J4   | D49  |  I  |   z  | nc                    |
+| PL1   |  36  | H4   | D48  |  I  |   z  | nc                    |
+| PL2   |  37  | G5   | D47  |  I  |   z  | nc                    |
+| PL3   |  38  | H5   | D46  |  I  |   z  | nc                    |
+| PL4   |  39  | F5   | D45  |  O  |   -  | buzzer                |
+| PL5   |  40  | K6   | D44  |  I  |   z  | nc                    |
+| PL6   |  41  | J6   | D43  |  I  |   z  | nc                    |
+| PL7   |  42  | H6   | D42  |  I  |   z  | nc                    |
 
 | Name  | Pin  | Ball | Ardn | Dir | Pull | Usage                 |
 | ----- | ---: | ---- | ---: | --- | ---- | --------------------- |
@@ -203,19 +203,28 @@
 
 ### signal summary
 
-| Pin                     | Name |
-| ----------------------: | ---- |
-| PD2 PD3                 | uart rx/tx
-| P?? P?? P?? P??         | step x,y,z,b
-| P?? P?? P?? P??         | dir  x,y,z,b
-| PJ0 PJ1 PJ2 PJ3         | endstop x,y,z,b
-| P?? P??                 | motor wheel spindle
-| P??                     | buzzer
-| PE4 PB6                 | home sensor gauge + probe
-| PB4                     | probe contact
-| PB0 PE0                 | lid switch 1+2
-| P?? P?? P?? P?? P?? P?? | optical reader (up to 6)
-| PJ4 PJ5 PJ6 PJ7         | "inputs" 1-4
+| Pin                 | Dir | Name |
+| ------------------: | --- | ---- |
+| PD2 PD3             | IO  | uart rx/tx
+| PA0                 |  O  | global stepper enable
+| PK0 PK1 PK2 PK3     |  O  | step x,y,z,b
+| PK4 PK5 PK6 PK7     |  O  | dir  x,y,z,b
+| PJ0 PJ1 PJ2 PJ3     |  I  | endstop x,y,z,b
+| PH1 PH2             |  O  | motor spindle wheel
+| PE5 PE6 PH3 PH4     |  I  | motor spindle wheel running & error
+| PL4                 |  O  | buzzer
+| PE4 PB6             |  I  | home sensor gauge + probe
+| PB4 PB5             |  I  | probe contact, fastsw2
+| PB0 PE0             |  I  | lid switch 1+2
+| PD5 PD6 PD7         |  O  | led R/G/B
+| PJ4 PJ5 PJ6 PJ7     |  I  | "inputs" 1-4
+| PC4 PC5 PC6 PC7     |  O  | "outputs" 1-4
+| PF0 PF1 PF2 PF3 PF4 | IO  | UNKNOWN: optical reader (IOIIO)
+| PF5 PF6             |  I  | UNKNOWN: motor
+| PB7                 |  I  | UNKNOWN
+| PE7                 |  O  | UNKNOWN: square wave during idle?!
+| PA3 PA4             |  O  | static 0
+| PA1 PA2 PH5 PH6     |  O  | static 1
 
 
 # Connectors and internal Endpoints
